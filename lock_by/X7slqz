@@ -1,8 +1,8 @@
-        --// By X7slqz
+--// KAL SKIDDED THIS SHIT! HE DIDNT MADE THIS BTW
     Settings = {
         Kalslock = {
         Enabled = true,
-        Key = "e",
+        Key = "q",
         showdot = true,
         airshots = true,
         notifaction = true,
@@ -10,7 +10,7 @@
         FOV = math.huge,
         RESOVLER = true,
         Tracer = true,
-        TracerColor = Color3.new(139,0,0),
+        TracerColor = Color3.new(0, 255, 238),
         TracerTransparency = 0.75,
         TracerThickness = 5,
         Circles = false,
@@ -24,7 +24,7 @@
         Texts = false, 
         TextColor = Color3.new(255, 255, 255),
         TextSize = 35,
-        TextInput = "BloodSeek",
+        TextInput = "skidded",
         Hitbox = true,
         NoBulletDelay = false,
         Autoclicker = false,
@@ -106,7 +106,7 @@
     function noob(player)
         local character
         repeat wait() until player.Character
-        local handler = makemarker(guimain, player.Character:WaitForChild(SelectedPart), Color3.fromRGB(139,0,0), 0.3, 3)
+        local handler = makemarker(guimain, player.Character:WaitForChild(SelectedPart), Color3.fromRGB(0, 255, 229), 0.3, 3)
         handler.Name = player.Name
         player.CharacterAdded:connect(function(Char) handler.Adornee = Char:WaitForChild(SelectedPart) end)
  
@@ -156,7 +156,7 @@
                 game.StarterGui:SetCore("SendNotification", {
                     Title = "BloodSeek";
                     Text = "  Unlocked",
-                    Icon = "http://www.roblox.com/asset/?id=13247795016",
+                    Icon = "rbxassetid://13247795016",
                     Duration = 3
                 })
             end
@@ -164,14 +164,14 @@
                 Plr = getClosestPlayerToCursor()
                 enabled = true
                 if Settings.Kalslock.notifaction == true then
- 
+    
                     game.StarterGui:SetCore("SendNotification", {
                         Title = "BloodSeek";
                         Text = "  Target: "..tostring(Plr.Character.Humanoid.DisplayName),
-                        Icon = "http://www.roblox.com/asset/?id=13247795016",
+                        Icon = "rbxassetid://13247795016",
                         Duration = 3
                     })
- 
+    
                 end
             end
         end
@@ -392,3 +392,4 @@
             end
             end)
         end
+ 
