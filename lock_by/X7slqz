@@ -154,9 +154,9 @@
                 if Settings.Kalslock.notifaction == true then
                     Plr = getClosestPlayerToCursor()
                 game.StarterGui:SetCore("SendNotification", {
-                    Title = "BloodSeek";
+                    Title = "Kal Skidded This";
                     Text = "  Unlocked",
-                    Icon = "rbxassetid://13247795016",
+                    Icon = "rbxassetid://13247795001",
                     Duration = 3
                 })
             end
@@ -164,14 +164,14 @@
                 Plr = getClosestPlayerToCursor()
                 enabled = true
                 if Settings.Kalslock.notifaction == true then
-    
+ 
                     game.StarterGui:SetCore("SendNotification", {
                         Title = "BloodSeek";
                         Text = "  Target: "..tostring(Plr.Character.Humanoid.DisplayName),
-                        Icon = "rbxassetid://13247795016",
+                        Icon = "rbxassetid://13247795001",
                         Duration = 3
                     })
-    
+ 
                 end
             end
         end
